@@ -1,5 +1,6 @@
 #part1 {
   background-image: url(../image/paint3.jpg);
+   background-color: azure; /*this color will appear in case the image fails to load */
   background-size: cover;
   height: 900px;
   background-attachment: fixed;
@@ -38,5 +39,56 @@ nav a {
   padding-left: 40px;
   padding-right: 200px;
   margin-right: 10px;
+}
 
+.image img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image img:hover{
+    -webkit-filter: grayscale(0);
+	  filter: gra  yscale(0);
+}
+
+#mySidenav a {
+  margin-top: 30px; 
+  position: absolute;
+  left: -90px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 110px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+#home {
+  top: 20px;
+  background-color: #E1AD01;
+}
+
+#artworks {
+  top: 80px;
+  background-color: #4CAF50;
+}
+
+#gallery {
+  top:140px;
+  background-color: #2196F3;
+}
+
+#ourteam {
+  top: 200px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 260px;
+  background-color: #555
 }
