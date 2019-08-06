@@ -8,8 +8,8 @@ This is a web-applicatin that can help painter to publish his/her painter either
 ## Setup/Installation Requirements
 * GitHub Account
 * Terminal 
-* Any Browser
-* Visual Studio Code 
+* Any Browsers
+* Visual Studio Code
 ## Project setup instructions
 To start using this project use the following commands:
 * Ctrl + Shift + T 
