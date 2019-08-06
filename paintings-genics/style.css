@@ -4,6 +4,19 @@ h1{
   font-weight:bold;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#mail,#code{
-  
+#mail,#code,#first,#last{
+  margin-left:2%;
+}
+#me{
+  margin-left:24%;
+}
+#sign{
+  width:220px;
+  margin-left:42%;
+}
+.person{
+  width:20%;
+}
+#register{
+  margin-left:24%;
 }
