@@ -1,18 +1,18 @@
-// Get the modal
+// Business logic
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     };
 };
 
-$(document).ready(function(){
-  $("img#male").click(function(){
-    $("img#female").hide();
-  });
-  $("img#female").click(function(){
-    $("img#male").hide();
-  });
-});
+//user interface
+// $(document).ready(function(){
+//   $("img#male").click(function(){
+//     $("img#female").hide();
+//   });
+//   $("img#female").click(function(){
+//     $("img#male").hide();
+//   });
+// });
