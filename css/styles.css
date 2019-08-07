@@ -41,11 +41,17 @@ nav a {
   margin-right: 10px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .image img{
     -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  
 }
 .image img:hover{
     -webkit-filter: grayscale(0);
@@ -53,12 +59,12 @@ nav a {
 }
 
 #mySidenav a {
-  margin-top: 30px; 
+  margin-top: 190px; 
   position: absolute;
   left: -90px;
   transition: 0.3s;
-  padding: 15px;
-  width: 110px;
+  padding: 13px;
+  width: 130px;
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -74,21 +80,25 @@ nav a {
 }
 
 #artworks {
-  top: 80px;
+  top: 100px;
   background-color: #4CAF50;
 }
 
 #gallery {
-  top:140px;
+  top:180px;
   background-color: #2196F3;
 }
 
 #ourteam {
-  top: 200px;
+  top: 260px;
   background-color: #f44336;
 }
 
 #contact {
-  top: 260px;
+  top: 340px;
   background-color: #555
+}
+
+.head {
+  background-color: antiquewhite;
 }
