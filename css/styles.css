@@ -1,4 +1,4 @@
-#gallery{
+#main{
     text-align: center;
     font-weight: bolder; 
     font-family: cursive;
@@ -29,14 +29,14 @@
 }
 .column div span {
 	position: absolute;
-	bottom: -20px;
+	bottom: 10px;
 	left: 0;
-	z-index: -1;
-	display: block;
+	z-index: 6;
+	display: inline-block;
 	width: 300px;
 	margin: 0;
 	padding: 0;
-	color: #444;
+	color: white;
 	font-size: 18px;
 	text-decoration: none;
 	text-align: center;
@@ -53,7 +53,7 @@ figure {
 	overflow: hidden;
 }
 figure:hover+span {
-	bottom: -36px;
+	bottom: 36px;
 	opacity: 1;
 }
 .hover01 figure img {
