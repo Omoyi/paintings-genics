@@ -137,14 +137,14 @@ figure:hover+span {
 	margin-left: 0;
 }
 section {
-    height: 30vh;
+    height: 24vh;
   }
 nav {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     background: #fff;
-    padding: 50px 0;
-    box-shadow: 0px 5px 0px #dedede;
+    padding: 30px 0;
+    box-shadow: 0px 4px 0px rgb(138, 214, 198);
   }
   nav ul {
     list-style: none;
@@ -155,7 +155,7 @@ nav {
   }
   nav ul li a {
     display: block;
-    padding: 15px;
+    padding: 7px;
     text-decoration: none;
     color: #aaa;
     font-weight: 800;
@@ -170,12 +170,10 @@ nav {
   nav ul li a:hover {
     color: #555;
   }
-  nav.stroke ul li a,
-  nav.fill ul li a {
+  nav.stroke ul li a {
     position: relative;
   }
-  nav.stroke ul li a:after,
-  nav.fill ul li a:after {
+  nav.stroke ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -187,6 +185,37 @@ nav {
     background: #aaa;
     height: 1px;
   }
-  nav.stroke ul li a:hover:after {
-    width: 100%;
+  nav.stroke .active ul li a:hover:after {
+    width: 80%;
   }
+  .hover09 figure {
+	position: relative;
+}
+.hover09 figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover09 figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
