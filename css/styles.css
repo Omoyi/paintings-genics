@@ -53,7 +53,7 @@ figure {
 	overflow: hidden;
 }
 figure:hover+span {
-	bottom: 36px;
+	bottom: 20px;
 	opacity: 1;
 }
 .hover01 figure img {
