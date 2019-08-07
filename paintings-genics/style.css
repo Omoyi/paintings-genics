@@ -20,3 +20,14 @@ h1{
 #register{
   margin-left:24%;
 }
+#tea{
+  text-align: center;
+  padding-top:15%;
+  font-family: 'EB Garamond', serif;
+  color: whitesmoke;
+  background-image: url("images/diverse-people-join-hands-team-260nw-1401387992.webp");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:500px;
+  
+}
