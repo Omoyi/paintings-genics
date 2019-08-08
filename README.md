@@ -4,7 +4,7 @@
 ### Author
 https://github.com/Omoyi
 ## Description
-This is a web-applicatin that can help painter to publish his/her painter either for sale and also it could be easy way for him/her to communicate with customers who want palette(paints board).
+This is a web-applicatin that can help painters to publish their paints either for sale and also it could be easy way for them to communicate with customers who want palette(paints board).
 ## Setup/Installation Requirements
 * GitHub Account
 * Terminal 
