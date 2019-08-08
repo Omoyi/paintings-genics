@@ -1,5 +1,5 @@
 # PAINTINGS-GENICS
-#### Where artist(painter) can log in order to post or publish his/her paints , August, 6, 2019
+#### Is a platform where artist(painter) can log in order to post or publish his/her paints , August, 6, 2019
 #### By MANIRAKORA Alexie,NYIRATE Emma, UWIMANA Rachel, UMURERWA L.Flower
 ### Author
 https://github.com/Omoyi
