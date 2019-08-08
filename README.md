@@ -16,8 +16,8 @@ To start using this project use the following commands:
 * git clone ......
 * code . :  (this is if Visual Studio Code is your preferred text editor)
 ### BDD
-Story:how to be participant
-* 
+* If your are painter first you have sign up by adding your details(name,email...) and upload your paintings and categorise them as well and make  a description about them.Where you get acess to paintings work through paintings genics.
+
 ## Known Bugs
 No Bugs
 ## Technologies Used
