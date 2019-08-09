@@ -1,78 +1,476 @@
-h1{
-    text-align: center;
-    font-size:20px;
-    font-weight:bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+#part1 {
+  background-image: url(../image/paint3.jpg);
+  background-color: azure; 
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.sectionA {
+  background: linear-gradient(90deg, rgb(240, 167, 9) ,rgb(47, 221, 212), rgb(44, 173, 12), rgb(214, 29, 29), rgb(212, 193, 15));
+  background-size: 600% 100%;
+  animation: bggradient 10s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submit {
+  background-color: unset;
+  border-radius: 9px;
+  font-size: 23px;
+  padding: 18px;
+  width: 12%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+nav {
+  width: 100%;
+  height: 58px;
+}
+
+nav a, .dropbtn {
+  display: block;
+  float: left;
+  font-family: 'Lacquer', sans-serif;
+  font-size: 20px;
+  color: rgb(41, 23, 23);
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.dropbtn {
+  background-color: unset;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 4%;
+  border-radius: 30px;
+} 
+
+
+#logo {
+  font-size: 40px;
+  text-shadow: 1px 1px 2px #c4c4c4;
+  padding-left: 40px;
+  padding-right: 200px;
+  margin-right: 10px;
+}
+
+image.img-fluid {
+  max-width: 100%;
+  height: 500px;
+}
+
+.part2 img{
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  
+}
+.part2 img:hover{
+    -webkit-filter: grayscale(0);
+	  filter: gra  yscale(0);
+}
+
+#mySidenav a {
+  margin-top: 190px; 
+  position: absolute;
+  left: -90px;
+  transition: 0.3s;
+  padding: 13px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+#hm {
+  top: 20px;
+  background-color: #E1AD01;
+}
+
+#artwks {
+  top: 100px;
+  background-color: #4CAF50;
+}
+
+#gal {
+  top:180px;
+  background-color: #2196F3;
+}
+
+#ourtm {
+  top: 260px;
+  background-color: #cf208c;
+}
+
+#cntct {
+  top: 340px;
+  background-color: #555
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.bton {
+  background-color: #4CAF50;
+  color: rgb(7, 7, 7);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal, .modal1 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: rgb(250, 248, 245);
+  opacity: 0.95;
+  font-size: 20px;
+  margin: 5% auto 15% auto;
+  border: 1px solid rgb(216, 209, 209);
+  width: 80%; 
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close1  {
+  position: absolute;
+  right: 200px;
+  top: 9%;;
+  color: rgb(5, 5, 5);
+  font-size: 95px;
+  font-weight: bold;
+}
+
+.close1:hover, .close:hover, .close1:focus
+.close:focus {
+  color: rgb(0, 8, 53);
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
   }
-  .profile {
-    max-width: 200px;
-    max-height: 200px;
-    display: block;
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.avatar {
+  width: 50px;
+}
+
+* {
+  margin: 0;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #FFF;
+  opacity: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 70px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.profile {
+  max-width: 200px;
+  max-height: 200px;
+  display: block;
 }
 
 #fil {
-    display: none;
+  display: none;
 }
 .circle {
-    border-radius: 1000px !important;
-    overflow: hidden;
-    width: 140px;
-    height: 140px;
-    border: 8px solid rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 72px;
+  border-radius: 1000px !important;
+  overflow: hidden;
+  width: 190px;
+  height: 200px;
+  border: 8px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 72px;
 }
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 .pimag {
-  position: absolute;
-  top: 167px;
-  right: 160px;
-  color: #666666;
-  transition:(.175, .885, .32, 1.275);
+position: absolute;
+top: 167px;
+right: 350px;
+color: #666666;
+transition:(.175, .885, .32, 1.275);
 }
 .pimag :hover {
-  transition:(.175, .885, .32, 1.275);
+transition:(.175, .885, .32, 1.275);
 }
+
 #pick {
-  font-size: 1.2em;
+font-size: 1.2em;
 }
 
 .pick:hover {
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-  color: #999;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+color: #999;
 }
+
 #mail,#code,#first,#last{
-    margin-left:2%;
-  }
-#me{
-    margin-left:24%;
-  }
-#sign{
-    width:220px;
-    margin-left:42%;
-  }
-  .person{
-    width:20%;
-  }
-  #register{
-    margin-left:24%;
-  }
-#circle {
-    border: 90px;
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    border: 4px solid rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 45px;
+  margin-left:2%;
+  font-size: 18px;
+  font-family: 'Lacquer', sans-serif;
 }
-#pimag {
-    position: absolute;
-    top: 227px;
-    right: 130px;
-    color: #666666;
-    transition:(.175, .885, .32, 1.275);
+
+#sign{
+  width:220px;
+  margin-left:42%;
+  font-size: 24px;
+  font-family: 'Great Vibes', cursive; 
+}
+.person{
+  width:20%;
+}
+
+#word, #passy, #maile, #name2, #name1 {
+  padding: 25px;
+  width: 440px;
+}
+
+/* ...................................................gallery........................................................................... */
+
+.gal {
+  background: linear-gradient(90deg, rgb(49, 119, 34) ,rgb(156, 103, 23), rgb(212, 193, 15), rgb(11, 80, 76), rgb(44, 173, 12));
+  animation: bggradient 10s linear infinite;
+  animation-direction: alternate;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2:after {
+  border-bottom: 1px solid #413f3f;
+  font-family: 'Great Vibes', cursive;
+  font-size: 90px;
+  text-align: center;  
+  content: "Hello there! Want some inspiration?"; 
+  display: block; 
+  margin: 0 auto; 
+  width: 50%;
+  padding-top: 160px; 
+  color: goldenrod;
+}
+
+h1:after {
+  border-bottom: 1px solid #413f3f;
+  font-family: 'Great Vibes', cursive;
+  font-size: 90px;
+  text-align: center;  
+  content: "Welcome! To Paintings Genics Want some inspiration?"; 
+  display: block; 
+  margin: 0 auto; 
+  width: 50%;
+  padding-top: 250px; 
+  color: rgb(233, 79, 32);
+} 
+
+h4:after {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 70px;
+  text-align: center;  
+  content: "Keep navigating!!"; 
+  display: block; 
+  margin: 0 auto; 
+  width: 50%;
+  padding-top: 130px; 
+  color: rgb(54, 39, 1);
+}
+h3:after {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;  
+  content: "Inspire yourself looking at this portrayals!!"; 
+  display: block; 
+  margin: 0 auto; 
+  width: 50%;
+  padding-top: 20px; 
+  color: rgb(32, 14, 11);
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+  .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+  
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
   }
+}
+  
+@media (max-width: 400px) {
+  .btn.filter {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  }
+}
+/* .......................................end.................................... */
+#btn {
+  color: rgb(88, 124, 97); 
+  background: transparent;  
+  border: 2px solid rgb(147, 163, 147);
+  border-radius: 6px; 
+  border: none;      
+  color: white;   
+  font-family: 'Cinzel', serif; 
+  padding: 62px;      
+  text-align: center;      
+  display: inline-block;      
+  font-size: 46px;      
+  margin: 4px 2px;      
+  -webkit-transition-duration: 0.4s;      
+  transition-duration: 0.4s;      
+  cursor: pointer;      
+  text-decoration: none;      
+  text-transform: uppercase;
+}
+
+#btn:hover { 
+  background-color: #008CBA;      
+  color: white; 
+}
+
+.myheader {
+  background-image: url(../image/painti7.png);
+  background-repeat: no-repeat;
+  background-size: 1700px;
+  height: 900px;
+  margin-top: 6%;
+  margin-left: 7%;
+}
+
+.dots {
+  font-size: 60px;
+  color: brown;
+}
