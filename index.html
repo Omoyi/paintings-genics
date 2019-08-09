@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paintings genics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sectionA">
+      <div class="head">
+        <nav>
+          <a id="logo" href="">PaiNtInGs GeNicS</a>
+          <a href="#home">HOME</a>
+          <div class="dropdown">
+            <button class="dropbtn">Artworks</button>
+              <div class="dropdown-content">
+                <a href="artworks.html">Easy paintings</a>
+                <a href="canvas.html">Oil paintings__</a>
+                <a href="water.html">water color painting</a>
+                <a href="acrylic.html">Acrylic painting</a>
+                <a href="traditional.html">Encaustic painting</a>
+              </div>
+          </div>
+          <a href="team.html">OUR TEAM</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="contact.html">CONTACT</a>
+        </nav><br><br><br><br>
+      </div>
+      <div id="part1" class="img-fluid">
+        <div id="mySidenav" class="sidenav">
+          <a href="#home" id="hm">Home</a>
+          <a href="artworks.html" id="artwks">Artworks</a>
+          <a href="team.html" id="ourtm">Meet us</a>
+          <a href="gallery.html" id="gal">Gallery</a>
+          <a href="contact.html" id="cntct">Contact</a>
+        </div><br><br><br><br>
+        <h1></h1>
+        <h4></h4>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button onclick="window.location.href = 'create.html';" class="submit">Sign up</button>
+        <button class="submit" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button>
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="image/person2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container-fluid">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <button class="bton" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="container-fluid"><br>
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div><br><br><br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="sectionB">
+      <div class="part2">
+        <div class="row">
+          <div class="col-md-6">
+            <a href=""></a> <img src="image/paint1.jpg" class="img-fluid" style="height: 600px;">
+          </div> 
+          <div class="col-md-6">
+            <img src="image/paint4.jpg" class="img-fluid" style="width: 940px; height: 600px;">
+          </div>
+        </div>   
+      </div>
+    </div>
+    <div class="footer">
+      <p style="text-align: center; font-size: 20px; backdrop-filter: 5px;">Copyright@PaiNtInGs GeNicS2019</p>
+    </div>
+  
+</html>

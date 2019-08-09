@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+  <title>Paintings Genics</title>
+</head>
+<body>
+  <div class="well" style="width:700px;margin-top:5%;margin-left:5%;">
+    <h1>Paintings Genics</h1>
+    <br>  
+    <div class="form-group row">
+        <div class="col-sm-6">
+          <div id="circle">
+            <img class="profile" src="http://cdn.cutestpaw.com/wp-content/uploads/2012/07/l-Wittle-puppy-yawning.jpg">
+          </div>
+          <div class="pimag" id="pimag">
+            <i class="fa fa-camera" id="pick"></i>
+             <input class="file" type="file" id="fil" accept="images/*">
+          </div>
+       </div>
+    </div>
+    <form id="form2" style="margin-left: 170px;">
+        <div>
+          <h2 style="font-weight:bold;font-size:20px;margin-left:30%;">Type of Painting</h2>
+          <select id="pan" style="margin-left:30%;">
+            <option value=""></option>
+            <option value="easy">Easy</option>
+            <option value="oil painting">Oil Painting</option>
+            <option value="acrylic">Acrylic</option>
+            <option value="water color">Water Color</option>
+            <option value="encaustic">Encaustic</option>
+          </select>
+        </div>
+        <br>
+        <textarea rows="4" cols="40" id="desk" placeholder="Description..." style="margin-left:30%;"></textarea>
+        <br>
+        <br>
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-primary" id="sign" onclick="myPaint()" style="margin-left:69%;">Upload</button>
+          </div>
+        </div>
+    </form>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDBshCG2uWj4J2XNJlYHKnUbVCSUs3v6Xw",
+      authDomain: "paintings-genics-e0060.firebaseapp.com",
+      databaseURL: "https://paintings-genics-e0060.firebaseio.com",
+      projectId: "paintings-genics-e0060",
+      storageBucket: "",
+      messagingSenderId: "189774392664",
+      appId: "1:189774392664:web:064a8624dcdc4f98"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    console.log(firebase);
+     var database = firebase.database();
+     console.log(database);
+     var ref = database.ref("lep");
+   //   var messagesRef=database.ref('messages');
+   var input=document.getElementById("form2")
+    function myPaint(){
+        var lep={
+           file:document.getElementById("fil").value,
+           first: document.getElementById("pan").value,
+           last: document.getElementById("desk").value,
+        }
+       ref.push(lep);
+   }
+  </script>
+  <script src="Js/Scripts.js"></script> 
+</body>
+</html>
