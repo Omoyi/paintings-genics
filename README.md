@@ -14,7 +14,7 @@ https://github.com/Omoyi
 ## Project setup instructions
 To start using this project use the following commands:
 * Ctrl + Shift + T 
-* git clone ......
+* git clone https://github.com/Omoyi/paintings-genics.git
 * code . :  (this is if Visual Studio Code is your preferred text editor)
 ### BDD
 * If your are painter first you have sign up by adding your details(name,email...),that will make you be a member of paintings genics so you can Login other time and upload your paintings and categorise them as well and make  a description about them.Where you get acess to paintings work through paintings genics.
